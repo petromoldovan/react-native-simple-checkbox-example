@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import Checkbox from './checkbox/Checkbox';
+import external from './de003.png';
 
 
 export default class checkbox extends Component {
@@ -31,11 +32,21 @@ export default class checkbox extends Component {
 
           <Checkbox
               actionCallback={alert}
+              label="good day"
+              labelStyle={{fontWeight: "900"}}
+              internalImgPath={external}
           />
       </View>
     );
   }
 }
+
+//label first
+//{flexDirection: "row-reverse", justifyContent: "flex-end" }
+
+
+//label above and center
+//{flexDirection: "column-reverse", alignItems: "center" }
 
 const styles = StyleSheet.create({
   container: {
